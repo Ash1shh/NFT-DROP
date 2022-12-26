@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>NFT</h1>
+      <h1>NFT DROP</h1>
     </div>
   )
 }
