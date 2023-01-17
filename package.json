@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.1.2",
     "@sanity/image-url": "^1.0.1",
     "@thirdweb-dev/react": "^3.6.8",
     "@thirdweb-dev/sdk": "^3.6.8",

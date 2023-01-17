@@ -16,7 +16,7 @@ function searching({ collections }: Props) {
     const [claimedSupply, setClaimedSupply] = useState<number>(0);
     const [totalSupply, setTotalSupply] = useState<BigNumber>()
     const [loading, setLoading] = useState<boolean>(true)
-    const [priceInBUSD, setPriceInBUSD] = useState<string>()
+    const [price, setPrice] = useState<string>()
     const nftDrop = useNFTDrop(collections.address)
     //console.log(collections.address)
     // Auth
@@ -28,7 +28,7 @@ function searching({ collections }: Props) {
         if (!nftDrop) return;
         const fetchPrice = async () => {
             const claimConditions = await nftDrop.claimConditions.getAll()
-            setPriceInBUSD(claimConditions?.[0].currencyMetadata.displayValue)
+            setPrice(claimConditions?.[0].currencyMetadata.displayValue)
         }
         fetchPrice()
     }, [nftDrop])
@@ -187,7 +187,7 @@ function searching({ collections }: Props) {
                     ) : !address ? (
                         <>Sign in to Mint</>
                     ) : (
-                        <span className="font-bold">Mint NFT ({priceInBUSD} TBNB)</span>
+                        <span className="font-bold">Mint NFT ({price} TBNB)</span>
                     )}
                 </button>
 
