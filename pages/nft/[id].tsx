@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAddress, useDisconnect, useMetamask, useNFTDrop } from "@thirdweb-dev/react";
+import { useAddress, useDisconnect, useMetamask, useContract } from "@thirdweb-dev/react";
 import { GetServerSideProps } from 'next'
 import { sanityClient, urlFor } from "../../sanity"
 import { Collection } from '../../typings'
@@ -17,7 +17,8 @@ function searching({ collections }: Props) {
     const [totalSupply, setTotalSupply] = useState<BigNumber>()
     const [loading, setLoading] = useState<boolean>(true)
     const [price, setPrice] = useState<string>()
-    const nftDrop = useNFTDrop(collections.address)
+    const nftDrop = useContract(collections.address, "nft-drop").contract
+    // const nftDrop = useNFTDrop(collections.address)
     //console.log(collections.address)
     // Auth
     const address = useAddress();
