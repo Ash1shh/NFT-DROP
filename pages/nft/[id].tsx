@@ -116,7 +116,7 @@ function searching({ collections }: Props) {
                     <div className='bg-gradient-to-br from-yellow-400 to-purple-600 p-2 rounded-xl'>
                         <img
                             className='w-44 rounded-xl object-cover lg:h-96 lg:w-72'
-                            src={urlFor(collections.previewImage).url()}
+                            src={urlFor(collections.mainImage).url()}
                             alt="" />
                     </div>
                     <div className='space-y-2 text-center p-5'>
@@ -157,7 +157,7 @@ function searching({ collections }: Props) {
                 <div className='mt-10 flex flex-1 flex-col items-center text-center space-y-6 lg:space-y-0 lg:justify-center'>
                     <img
                         className='w-80 object-cover pb-10 lg:h-40'
-                        src={urlFor(collections.mainImage).url()}
+                        src={urlFor(collections.previewImage).url()}
                         alt="" />
                     <h1
                         className="text-3xl font-bold lg:text-5xl lg:font-extrabold"
