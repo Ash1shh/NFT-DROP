@@ -53,7 +53,7 @@
 ### :camera: Screenshots
 
 <div align="center" display='flex'>
-<a ><img width='800rem'  src='https://user-images.githubusercontent.com/87669361/212989203-1e8d2f39-1ffb-418f-a38a-3c06fcc14efc.jpg' alt='image'/></a>
+<a ><img width='800rem'  src='https://user-images.githubusercontent.com/87669361/218257943-7b126886-439f-4cd7-a400-4a2f4c9dd715.jpg' alt='image'/></a>
 <a ><img width='800rem'  src='https://user-images.githubusercontent.com/87669361/212989211-4576bdc6-6036-47b8-9d25-80709de47da8.jpg' alt='image'/></a>
 
 </div>
